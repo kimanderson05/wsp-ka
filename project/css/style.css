@@ -1,0 +1,31 @@
+/* CSS for Project Analysis 
+
+Color Palette
+background: #5b7941
+wrapper:	#ca8225
+
+*/
+
+body {
+	background-color: #5b7941;
+}
+
+#wrapper {
+	background-color: #a59f7f;
+	margin: 0px 90px;
+	padding: 30px;
+	border: 2px solid #000000;
+}
+
+#heading {
+	border: 1px none #000;
+	background-color: e2ce60;
+	padding: 20px;
+}
+
+#sections {
+	border: 1px solid #000;
+	margin: 25px 0px;
+	padding: 20px;
+}
+
