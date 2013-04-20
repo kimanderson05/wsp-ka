@@ -1,0 +1,8 @@
+/*-- CSS for St. Francis Hospital for Animals --*/
+
+body{
+	background-image: url("../wallpaper.jpg");
+	background-repeat: repeat;
+	width: 960px;
+	margin: 0 auto;
+}
