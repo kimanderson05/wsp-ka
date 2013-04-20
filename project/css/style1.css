@@ -1,7 +1,7 @@
-/*-- CSS for St. Francis Hospital for Animals --*/
+/*-- CSS for Style Tiles --*/
 
 body{
-	background-image: url("../wallpaper.jpg");
+	background-image: url("../../activities/pics/wallpaper.jpg");
 	background-repeat: repeat;
 	width: 960px;
 	margin: 0 auto;
