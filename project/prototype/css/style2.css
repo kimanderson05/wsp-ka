@@ -4,20 +4,26 @@ body{
 	background-image: url("../images/sf_bg.jpg");
 	background-repeat: repeat-y;
 	background-color: #003333;
-	max-width: 960px;
+	/*max-width: 960px;*/
 	margin: 0 auto;
 }
 
 #wrapper {
 	clear: both;
-	max-width: 100%; /* 960px/960px*/
+	max-width: 960px; /* 960px/960px*/
 	background-color: #b6a88d;
 	border: 2px solid #b6a88d;
+	margin: 0 auto;
 	/*-webkit-box-shadow: 5px 5px 5px #b6a88d;
 	-moz-box-shadow: 5px 5px 5px #b6a88d; */
 }
 
 /*-----------------HEADER-----------------*/
+
+header {
+	margin: 0 auto;
+	width: 960px;
+}
 
 #sitebranding {
 	float: left;
@@ -75,6 +81,34 @@ body{
 
 #welcome {
 	clear: both;
+}
+
+/*-----------------ABOUT US-----------------*/
+
+#lead {
+	width: 22.916667%; /*220px/960px*/
+}
+
+#lead img {
+	max-width: 100%;
+}
+
+#team {
+	width: 13.020833%; /*125px/960px*/
+}
+
+#team img {
+	max-width: 100%;
+}
+
+/*-----------------FORMS-----------------*/
+
+#dog {
+	width: 39.0625%; /*375px/960px*/
+}
+
+#dog img {
+	max-width: 100%;
 }
 
 /*-----------------MEDIA QUERIES-----------------*/
