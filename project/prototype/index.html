@@ -5,17 +5,16 @@
 	<head>
 		<title>St. Francis Hospital for Animals</title>
 		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width initial-scale=1.0"/>
 		<link href="../css/style2.css" rel="stylesheet" type="text/css"/>
 		<link href="../css/normalize.css" rel="stylesheet" type="text/css"/>
 	</head>
 	
 <body>
 
-<div id="wrapper">
-
 	<header>
 	<div id="sitebranding">
-		<p><a href="index.html"><img src="../images/logo.png" width="285" height="150" alt="St. Francis Logo" title="St. Francis Logo"/></a></p>
+		<a href="index.html"><img src="../images/logo.png" width="285" height="150" alt="St. Francis Logo" title="St. Francis Logo"/></a>
 		<p class="tagline">Modern Medicine with Old Fashioned Care</p>
 		<p class="address">3928 Park Road<br/>Charlotte, NC  28209</p>
 	</div> <!--end of sitebranding-->
@@ -23,18 +22,16 @@
 	<div id="newsletter">
 		<p>Stay up to date on the latest<br/>news and information!</p>
 		<p><a href="forms.html">Sign up for our monthly newsletter!</a></p>
-	</div> <!--end of newsletter-->
-
-	<div id="social">
+	
 		<a href="https://www.facebook.com/"><img src="../images/facebook.png" width="32" height="32" alt="facebook" title="facebook"/></a>
 		<a href="https://twitter.com/"><img src="../images/twitter.png" width="32" height="32" alt="twitter" title="twitter"/></a>
 		<a href="https://www.linkedin.com/"><img src="../images/linkedin.png" width="31" height="31" alt="linkedin" title="linkedin"/></a>
-	</div> <!--end of social-->
+	</div> <!--end of newsletter-->
 
 	</header>
 
 <div id="navigation">
-<ul>
+<ul class="mainnav">
 	<li><a href="index.html">Home</a></li>
 	<li><a href="services.html">Services</a></li>
 	<li><a href="about_us.html">About Us</a></li>
@@ -44,9 +41,39 @@
 </ul>
 </div> <!--end of navigation-->
 
+<div id="wrapper">
+
 <div id="main">
-	<p><img src="../images/reception2.jpg" width="609" height="240" alt="Reception Desk" title="Reception Desk"/></p>
-	<p class="hours">OFFICE HOURS<br/>Mon-Fri	7:30am-6:00pm<br/>Sat	8:00am-12:00pm<br/>Sun	5:00pm-6:00pm<br/>(pet pick-up only)</p>
+	<div id="reception">
+		<img src="../images/reception2.jpg" width="609" height="240" alt="Reception Desk" title="Reception Desk"/>
+	</div> <!--end of reception-->
+
+	<table class="hours">
+		<tr>
+			<th colspan="2" scope="col">Office Hours</th>
+		</tr>
+
+		<tr>
+			<td>Mon-Fri</td>
+			<td>7:30am - 6:00pm</td>
+		</tr>
+
+		<tr>
+			<td>Sat</td>
+			<td>8:00am - 12:00pm</td>
+		</tr>
+
+		<tr>
+			<td>Sun</td>
+			<td>5:00pm - 6:00pm</td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td>(pet pick-up only)</td>
+		</tr>
+	</table>
+
 </div> <!--end of main-->
 
 <div id="welcome">

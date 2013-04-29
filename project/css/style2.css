@@ -1,7 +1,111 @@
 /*-- CSS for Prototype --*/
 
 body{
-	background-color: #b6a88d;
-	width: 960px;
+	background-image: url("../images/sf_bg.jpg");
+	background-repeat: repeat-y;
+	background-color: #003333;
+	max-width: 960px;
 	margin: 0 auto;
+}
+
+#wrapper {
+	clear: both;
+	max-width: 100%; /* 960px/960px*/
+	background-color: #b6a88d;
+	border: 2px solid #b6a88d;
+	/*-webkit-box-shadow: 5px 5px 5px #b6a88d;
+	-moz-box-shadow: 5px 5px 5px #b6a88d; */
+}
+
+/*-----------------HEADER-----------------*/
+
+#sitebranding {
+	float: left;
+	font: 1.33em Helvetica, Arial, Sans-serif; /*16pt*/
+}
+
+.tagline {
+	font: 1.33em; /*16pt*/
+}
+
+#newsletter {
+	font: 1.33em Helvetica, Arial, Sans-serif; /*16pt*/
+	float: right;
+	margin: 3.125% 1.041667%; /* 30px/960px 10px/960px */
+}
+
+#navigation {
+	float: right;
+	width: 62.5%; /*600px/960px*/
+	height: 68px;
+	margin: 0%;
+	font: .92em Helvetica, Arial, Sans-serif; /*11pt*/
+}
+
+.mainnav li {
+	display: inline-block;
+	line-height: 50px;
+	border: 2px solid #0a3b3b;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	cursor: pointer;
+	text-align: center;
+	background-color: #81a5a5;
+	padding: 0% 2.5%; /*15px/600px*/
+}
+
+/*-----------------INDEX-----------------*/
+#main {
+	font: 1.33em Helvetica, Arial, Sans-serif; /*16pt*/
+}
+
+#reception {
+	float: left;
+	width: 63.4375%; /*609px/960px*/
+}
+
+#reception img {
+	max-width: 100%;
+}
+
+.hours {
+	float: right;
+	margin: 7.291667% 4.6875%; /*70px/960px 45px/960px*/
+}
+
+#welcome {
+	clear: both;
+}
+
+/*-----------------MEDIA QUERIES-----------------*/
+
+/*--Tablet Portrait Size to Standard 960 (devices and browsers)--*/
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	#wrapper {
+		border: none;
+		background-color: #999;
+	}
+
+	#sitebranding {
+		width: 100%; /* 960px/960px */
+	}
+}
+
+/*--Mobile Landscape Size to Tablet Portrait (devices and browsers)--*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#wrapper {
+		border: none;
+		background-color: #fff;
+	}
+}
+
+/*--Mobile Portrait Size to Mobile Landscape Size (devices and browsers)--*/
+
+@media only screen and (max-width: 479px) {
+	#reception img {
+		display: none;
+		background-color: #666;
+	}
 }
