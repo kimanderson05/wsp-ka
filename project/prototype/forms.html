@@ -17,11 +17,17 @@
 		<a href="index.html"><img src="images/logo.png" alt="St. Francis Logo" title="St. Francis Logo"/></a>
 	</div> <!--end of sitebranding-->
 	
-	<div id="social">
+	<div id="newsletter">
+		<p>Stay up to date on the latest<br/>news and information!</p>
+		<p>Don't forget to sign up below!</p>
+		<div id="social1">
 		<a href="https://www.facebook.com/"><img src="images/facebook.png" width="32" height="32" alt="facebook" title="facebook"/></a>
 		<a href="https://twitter.com/"><img src="images/twitter.png" width="32" height="32" alt="twitter" title="twitter"/></a>
 		<a href="https://www.linkedin.com/"><img src="images/linkedin.png" width="31" height="31" alt="linkedin" title="linkedin"/></a>
-	</div> <!--end of social-->
+	</div> <!--end of social1-->
+	</div> <!--end of newsletter-->
+
+
 
 <ul class="mainnav">
 	<li><a href="index.html">Home</a></li>
@@ -38,7 +44,8 @@
 
 <form method="post" action="forms.html" class="registration_form">
 
-	<fieldset> <!-- begin registration form-->
+<fieldset class="registration"> <!--begin registration-->
+	<fieldset class="patient"> <!-- begin patient info-->
 		<legend>NEW PATIENT REGISTRATION</legend>
 			<div>
 				<label for="name">Name</label>
@@ -129,7 +136,7 @@
 			</div>
 	</fieldset> <!--end of registration-->
 	
-	<fieldset> <!--begin pet information-->
+	<fieldset class="pet_info"> <!--begin pet information-->
 			<legend>PET INFORMATION</legend>
 
 			<div>
@@ -171,8 +178,13 @@
 			<div><input type="submit" value="Register Now"/></div>
 	</fieldset> <!--end of pet information-->
 
+</fieldset> <!--end registration-->
 
-<fieldset> <!--begin sign_up-->
+</form>
+
+<form method="post" action="forms.html" class="sign_up_form">
+	<fieldset> <!--begin sign_up border-->
+<fieldset class="sign_up"> <!--begin sign_up-->
 
 	<h1>Stay up to date on the latest news and information!</h1>
 	<h2>Sign Up for our monthly newsletter!</h2>
@@ -189,10 +201,11 @@
 
 			<div><input type="submit" value="Sign Me Up!"/></div>
 </fieldset> <!--end of sign_up-->
+</fieldset> <!--end of sign_up border-->
 
 </form>
 
-<div id="dog"><img src="images/dog_cat.jpg" width="375" height="280" alt="dr_dog" title="dr_dog"/></div><!--end of dog-->
+<div id="dog"><img src="images/dog_cat.jpg" alt="dr_dog" title="dr_dog"/></div><!--end of dog-->
 
 <footer>
 <a href="index.html">Home</a>   |   <a href="about_us.html">About Us</a>   |   <a href="services.html">Services</a>   |   <a href="resources.html">Resources</a>   |   <a href="reviews.html">Reviews</a>   |   <a href="forms.html">Forms</a><br/>
