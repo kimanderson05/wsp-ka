@@ -369,14 +369,18 @@ td {
 @media screen and (min-width: 768px) and (max-width: 959px) {
 	
 /*----------Media Query 1---ALL PAGES-------*/
+	body {
+		width: 100%;
+	}
+
 	#wrapper {
-		width: 768px;
+		width: 100%;
 	}
 
 	header {
 	margin: 0 auto;
-	height: 185px; 
-	width: 768px;
+	height: 205px; 
+	width: 100%;
 	padding: 1.04667% 4.166667% 0; /*10px/960px 40px/960px 0*/
 	overflow: hidden;
 	background-image: linear-gradient(right top, #003232 20%, #B6A88D 62%);
@@ -501,14 +505,18 @@ td {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	
 /*----------Media Query 2---ALL PAGES-------*/
+	body {
+		width: 100%;
+	}
+
 	#wrapper {
-		width: 480px;
+		width: 100%;
 	}
 
 	header {
 	margin: 0 auto;
-	height: 210px; 
-	width: 480px;
+	height: 280px; 
+	width: 100%;
 	overflow: hidden;
 	background-image: linear-gradient(right top, #003232 20%, #B6A88D 62%);
 background-image: -o-linear-gradient(right top, #003232 20%, #B6A88D 62%);
@@ -662,14 +670,19 @@ td {
 
 @media only screen and (max-width: 479px) {
 /*----------Media Query 3---ALL PAGES-------*/
+	
+	body {
+		width: 100%;
+	}
+
 	#wrapper {
-		width: 400px;
+		width: 100%;
 	}
 
 	header {
 	margin: 0 auto;
-	height: 455px; 
-	width: 400px;
+	height: 465px; 
+	width: 100%;
 	overflow: hidden;
 	background-image: linear-gradient(right top, #003232 20%, #B6A88D 62%);
 background-image: -o-linear-gradient(right top, #003232 20%, #B6A88D 62%);
