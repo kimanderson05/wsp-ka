@@ -4,28 +4,25 @@ body{
 	background-image: url("../images/sf_bg.jpg");
 	background-repeat: repeat-y;
 	background-color: #003333;
-	/*max-width: 960px;*/
 	margin: 0 auto;
 }
 
 #wrapper {
 	clear: both;
-	max-width: 960px; /* 960px/960px*/
+	width: 960px;
+	max-width: 100%; /* 960px/960px*/
 	background-color: #b6a88d;
-	/*border: 2px solid #b6a88d;*/
 	margin: 0 auto;
-	padding: 40px;
-	/*-webkit-box-shadow: 5px 5px 5px #b6a88d;
-	-moz-box-shadow: 5px 5px 5px #b6a88d; */
+	padding: 4.166667%; /*40px/960px*/
 }
 
 /*-----------------HEADER-----------------*/
 
 header {
 	margin: 0 auto;
-	height: 230px;
+	height: 230px; 
 	width: 960px;
-	padding: 10px 40px 0;
+	padding: 1.04667% 4.166667% 0; /*10px/960px 40px/960px 0*/
 	overflow: hidden;
 	background-image: linear-gradient(right top, #003232 20%, #B6A88D 62%);
 background-image: -o-linear-gradient(right top, #003232 20%, #B6A88D 62%);
@@ -43,14 +40,17 @@ background-image: -webkit-gradient(
 }
 
 #sitebranding {
-	color: #e3e3e3;
 	float: left;
+}
+
+#sitebranding img {
+	max-width: 100%;
 }
 
 #newsletter {
 	font: 1.33em Helvetica, Arial, Sans-serif; /*16pt*/
 	text-align: right;
-	color: #fff	;
+	color: #fff;
 	float: right;
 }
 
@@ -60,7 +60,7 @@ background-image: -webkit-gradient(
 
 #social1 {
 	float: right;
-	margin: 0 0 0; 160px/960px
+	margin: 0 0 0;
 }
 
 #social {
@@ -70,21 +70,20 @@ background-image: -webkit-gradient(
 
 .mainnav {
 	clear: both;
-	width: 960px; 
-	margin: 15px 0;
-	padding: 15px 0 0px 380px;
+	width: 100%;
+	padding: 1.875% 0 0 39.58333%; /*20px/960px 0 0 380px/960px*/
 	font: 0.90337500903384em Helvetica, Arial, Sans-serif; /*10.8pt*/
 }
 
 
 .mainnav li {
-	display: inline-block;
+	display: block;
+	float: left;
 }
 
 .mainnav a {
-	display: inline-block;
+	display: block;
 	text-decoration: none;
-	float: right;
 	line-height: 50px;
 	border: 2px solid #8d5e04;
 	border-top-left-radius: 10px;
@@ -92,7 +91,7 @@ background-image: -webkit-gradient(
 	cursor: pointer;
 	text-align: center;
 	background-color: #b67800;
-	padding: 0% 22px; /*15px/600px*/
+	padding: 0% 22.9%;
 }
 
 
@@ -113,6 +112,13 @@ a:active {
 	color: #3a4247;
 }
 
+footer{
+	clear: both;
+	text-align: center;
+	margin: 5.208333% 0 0; /*50px/960px*/
+	padding-top: 5.208333%; /*50px/960px*/
+}
+
 
 /*-----------------INDEX-----------------*/
 #main {
@@ -130,8 +136,9 @@ a:active {
 }
 
 table.hours {
+	width: 30.104167%; /*289px/960px*/
 	float: right;
-	margin: 35px 30px; /*35px/960px 30px/960px*/
+	margin: 3.645833% 3.125%; /*35px/960px 30px/960px*/
 	border-collapse: collapse;
 	border: 1px solid #000;
 }
@@ -139,37 +146,30 @@ table.hours {
 th {
 	text-align: center;
 	border: 1px solid #000;
-	padding: 5px;
+	padding: 1.730104%; /*5px/289px*/
 }
 
 td {
-	padding: 10px;
+	padding: 3.460208%; /*10px/289px*/
 }
 
 #welcome {
-	padding: 20px 0;
+	padding: 2.083333% 0; /*20px/960px*/
 	clear: both;
 }
 
 #cta p {
 	display: inline-block;
 	float: left;
-	width: 175px;
+	width: 18.229167%; /*175px/960px*/
 	text-align: center;
 	word-wrap: break-word;
-	padding: 8px;
+	padding: 0.8%;
 }
 
 #cta img {
 	box-shadow: 0 3px 3px 0 #666;
-}
-
-
-footer{
-	clear: both;
-	text-align: center;
-	margin: 50px 0 0;
-	padding-top: 50px;
+	max-width: 100%;
 }
 
 
@@ -201,14 +201,14 @@ footer{
 	float: left;
 	margin: 16.666667% 1.5625%; /*160px/960px 15px/960px*/
 }
+
 #team {
 	width: 100%;
 	text-align: left;
-	margin: 20px;
 	clear: left;
 }
 
-#team img {
+#team1 img {
 	max-width: 100%;
 }
 
@@ -221,7 +221,7 @@ footer{
 
 .dr_dog {
 	width: 34.6875%; /*333px/960px*/
-	margin: 30px 50px;
+	margin: 6% 6%;
 	float: right;
 }
 
@@ -230,45 +230,45 @@ footer{
 }
 
 #general {
-	width: 400px;
+	width: 41.666667%; /*400px/960px*/
 	float left;
-	margin: 0 0 40px;
+	margin: 0 0 4.166667%; /*40px/960px*/
 }
 
 #missing {
-	width: 400px;
+	width: 41.666667%; /*400px/960px*/
 	float: left;
-	margin: 0 0 40px;
+	margin: 0 0 4.166667%; /*40px/960px*/
 }
 
 #dogs {
-	width: 400px;
+	width: 41.666667%; /*400px/960px*/
 	clear: left;
-	margin: 0 0 40px;
+	margin: 0 0 4.166667%; /*40px/960px*/
 }
 
 #cats {
-	width: 400px;
+	width: 41.666667%; /*400px/960px*/
 	float: left;
-	margin: 0 0 400px0px;
+	margin: 0 0 4.166667%; /*40px/960px*/
 }
 
 /*-----------------REVIEWS-----------------*/
 
 #quotes {
-	margin: 0 0 50px;
+	margin: 0 0 5.208333%; /*50px/960px*/
 }
 .name {
-	margin: 0 100px 50px;
+	margin: 0 10.416667% 5.208333%; /*100px/960px 50px/960px*/
 	font-weight: bold;
 }
 
 /*-----------------FORMS-----------------*/
 
 .registration_form {
-	width: 420px;
+	width: 43.75%; /*420px/960px*/
 	float: left;
-	padding: 10px;
+	padding: 1.041667%; /*10px/960px*/
 }
 
 .registration {
@@ -276,29 +276,27 @@ footer{
 }
 
 .patient {
-	width: 400px;
-	margin: 10px;
+	margin: 2.916667% 1.041667% 1.041667% 1.041667%; /*28px 10px 10px 10px / 960px */
 	border: 1px solid #b67800;
 }
 
 .pet_info {
-	width: 400px;
-	margin: 28px 10px 10px 10px;
+	margin: 2.916667% 1.041667% 1.041667% 1.041667%; /*28px 10px 10px 10px / 960px */
 	border: 1px solid #b67800;
 	clear: both;
 }
 
 #form {
-	padding: 10px;
+	padding: 2.916667%; /*28px/960px*/
 }
 
 .formfield {
-	width: 200px;
+	width: 47.619048%; /*200px/420px*/
 	float: right;
 }
 
 .dropdown {
-	width: 200px;
+	width: 47.619048%; /*200px/420px*/
 	float: right;
 }
 
@@ -316,28 +314,30 @@ footer{
 	display:inline-block;
 	color:#734c02;
 	font-family:arial;
-	font-size:20px;
+	font-size: 1.2em;
 	font-weight:bold;
-	padding:9px 17px;
+	padding: 2.142857% 4.047619%; /*9px/420px 17px/420px*/
 	text-decoration: none;
 	text-shadow:3px 3px 0px #cc9f52;
-	margin-top: 20px;
-}.button:hover {
+	margin-top: 3.571429%; /*15px/420px*/
+}
+
+.button:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #eac380), color-stop(1, #fae4bd) );
 	background:-moz-linear-gradient( center top, #eac380 5%, #fae4bd 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eac380', endColorstr='#fae4bd');
 	background-color:#eac380;
-}.button:active {
+}
+
+.button:active {
 	position:relative;
-	top:1px;
 }
 /* This imageless css button was generated by CSSButtonGenerator.com */
 
 .sign_up_form {
-	width: 420px;
+	width: 43.75%; /*420px/960px*/
 	float: left;
-	padding: 10px;
-	margin: 0 0 0 40px;
+	padding: 1.041667% 5.208333%; /*10px/960px 50px/960px*/
 }
 
 .sign_up {
@@ -345,16 +345,15 @@ footer{
 }
 
 .sign_up1 {
-	width: 400px;
 	float: left;
-	margin: 10px;
+	margin: 2.916667% 1.041667% 1.041667% 1.041667%; /*28px 10px 10px 10px / 960px */
 	border: 1px solid #b67800;
 }
 
 #dog {
 	width: 39.0625%; /*375px/960px*/
 	float: left;
-	padding: 35px 70px;
+	padding: 3.645833% 7.291667%; /*35px/960 70px/960px*/
 }
 
 #dog img {
@@ -368,30 +367,450 @@ footer{
 /*--Tablet Portrait Size to Standard 960 (devices and browsers)--*/
 
 @media screen and (min-width: 768px) and (max-width: 959px) {
+	
+/*----------Media Query 1---ALL PAGES-------*/
 	#wrapper {
-		border: none;
-		background-color: #999;
+		width: 768px;
 	}
 
-	#sitebranding {
-		width: 100%; /* 960px/960px */
-	}
+	header {
+	margin: 0 auto;
+	height: 185px; 
+	width: 768px;
+	padding: 1.04667% 4.166667% 0; /*10px/960px 40px/960px 0*/
+	overflow: hidden;
+	background-image: linear-gradient(right top, #003232 20%, #B6A88D 62%);
+background-image: -o-linear-gradient(right top, #003232 20%, #B6A88D 62%);
+background-image: -moz-linear-gradient(right top, #003232 20%, #B6A88D 62%);
+background-image: -webkit-linear-gradient(right top, #003232 20%, #B6A88D 62%);
+background-image: -ms-linear-gradient(right top, #003232 20%, #B6A88D 62%);
+
+background-image: -webkit-gradient(
+	linear,
+	right top,
+	left bottom,
+	color-stop(0.20, #003232),
+	color-stop(0.62, #B6A88D)
+);
+}
+	
+#sitebranding {
+	width: 60%;
+	float: left;
+}
+
+#newsletter {
+	font: 1em Helvetica, Arial, Sans-serif;
+	text-align: right;
+	color: #fff	;
+	float: right;
+}
+
+#newsletter a {
+	color: #fff;
+}
+
+#social1 {
+	float: right;
+	margin: 0 0 0;
+}
+
+#social {
+	float: right;
+	margin: 28.645833% 0 0; /* 220px/768px 0px/768px */
+}
+
+.mainnav {
+	clear: both;
+	width: 70%;
+	padding: 1.875% 0 0 39.0625%; /*20px/768px 0 0 300px/768px*/
+	font: 0.90337500903384em Helvetica, Arial, Sans-serif; /*10.8pt*/
+}
+
+.mainnav li {
+	display: block;
+	float: left;
+}
+
+.mainnav a {
+	display: block;
+	text-decoration: none;
+	line-height: 30px;
+	border: 2px solid #8d5e04;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	cursor: pointer;
+	text-align: center;
+	background-color: #b67800;
+	padding: 0% 16%;
+}
+
+/*----------Media Query 1---INDEX-------*/
+
+table.hours {
+	width: 32.552083%; /*250px/768px*/
+	float: right;
+	margin: 0.2%;
+	border-collapse: collapse;
+	border: 1px solid #000;
+	font-size: .8em;
+}
+
+th {
+	text-align: center;
+	border: 1px solid #000;
+	padding: 1.730104%; /*5px/289px*/
+}
+
+td {
+	padding: 4.152249%; /*12px/289px*/
+}
+
+
+#cta p {
+	display: block;
+	float: left;
+	width: 18.229167%; /*140px/768px*/
+	text-align: center;
+	word-wrap: break-word;
+	padding: 5px;
+}
+
+/*----------Media Query 1---ABOUT_US-------*/
+
+#team {
+	width: 100%;
+	text-align: left;
+	clear: left;
+}
+
+#team1 img {
+	max-width: 100%;
+}
+
+.team1 li {
+	padding: 0.651042%; /*5px/768px*/
+	display: block;
+	float: left;
+}
+
 }
 
 /*--Mobile Landscape Size to Tablet Portrait (devices and browsers)--*/
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+/*----------Media Query 2---ALL PAGES-------*/
 	#wrapper {
-		border: none;
-		background-color: #fff;
+		width: 480px;
 	}
+
+	header {
+	margin: 0 auto;
+	height: 210px; 
+	width: 480px;
+	overflow: hidden;
+	background-image: linear-gradient(right top, #003232 20%, #B6A88D 62%);
+background-image: -o-linear-gradient(right top, #003232 20%, #B6A88D 62%);
+background-image: -moz-linear-gradient(right top, #003232 20%, #B6A88D 62%);
+background-image: -webkit-linear-gradient(right top, #003232 20%, #B6A88D 62%);
+background-image: -ms-linear-gradient(right top, #003232 20%, #B6A88D 62%);
+
+background-image: -webkit-gradient(
+	linear,
+	right top,
+	left bottom,
+	color-stop(0.20, #003232),
+	color-stop(0.62, #B6A88D)
+);
+}
+	
+#sitebranding {
+	width: 60%;
+}
+
+#newsletter {
+	font: .7em Helvetica, Arial, Sans-serif;
+	text-align: right;
+	color: #fff	;
+	clear: both;
+}
+
+#newsletter a {
+	color: #fff;
+}
+
+#social1 {
+	display: none;
+}
+
+#social {
+	display: none;
+}
+
+.mainnav {
+	clear: both;
+	width: 100%;
+	padding: 4.166667% 0 0 8.75%; /*20px/480px 0 0 42px/480px*/
+	font: 0.84em Helvetica, Arial, Sans-serif; 
+}
+
+.mainnav a {
+	display: block;
+	text-decoration: none;
+	line-height: 30px;
+	border: 2px solid #8d5e04;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	cursor: pointer;
+	text-align: center;
+	background-color: #b67800;
+	padding: 0% 16%;
+}
+
+/*----------Media Query 2---INDEX-------*/
+
+#reception {
+	display: none;
+}
+
+table.hours {
+	width: 480px; /*480px/480px*/
+	margin: 0.2%;
+	border-collapse: collapse;
+	border: 1px solid #000;
+	font-size: .8em;
+}
+
+th {
+	text-align: center;
+	border: 1px solid #000;
+	padding: 1.041667%; /*5px/480px*/
+}
+
+td {
+	padding: 1.041667%; /*5px/480px*/
+}
+
+
+#cta p {
+	clear: both;
+	width: 29.166667%; /*140px/480px*/
+	text-align: center;
+	word-wrap: break-word;
+	padding: 5px;
+}
+
+/*----------Media Query 2---ABOUT_US-------*/
+
+#team {
+	width: 100%;
+	text-align: left;
+	clear: left;
+}
+
+#team1 img {
+	max-width: 100%;
+}
+
+.team1 li {
+	padding: 0.651042%; /*5px/768px*/
+	display: block;
+	float: left;
+}
+
+/*----------Media Query 2---RESOURCES-------*/
+
+.dr_dog {
+	display: none;
+}
+#general {
+	width: 100%; 
+}
+
+#missing {
+	width: 100%
+}
+
+#dogs {
+	width: 100%
+}
+
+#cats {
+	width: 100%
+}
+
+/*----------Media Query 2---FORMS-------*/
+
+.registration_form {
+	width: 100%;
+}
+
+.sign_up_form {
+	width: 100%; /*420px/960px*/
+	float: left;
+	padding: 1.041667%; /*10px/960px 50px/960px*/
+}
+
+#dog {
+	display: none;
+}
+
 }
 
 /*--Mobile Portrait Size to Mobile Landscape Size (devices and browsers)--*/
 
 @media only screen and (max-width: 479px) {
-	#reception img {
-		display: none;
-		background-color: #666;
+/*----------Media Query 3---ALL PAGES-------*/
+	#wrapper {
+		width: 400px;
 	}
+
+	header {
+	margin: 0 auto;
+	height: 455px; 
+	width: 400px;
+	overflow: hidden;
+	background-image: linear-gradient(right top, #003232 20%, #B6A88D 62%);
+background-image: -o-linear-gradient(right top, #003232 20%, #B6A88D 62%);
+background-image: -moz-linear-gradient(right top, #003232 20%, #B6A88D 62%);
+background-image: -webkit-linear-gradient(right top, #003232 20%, #B6A88D 62%);
+background-image: -ms-linear-gradient(right top, #003232 20%, #B6A88D 62%);
+
+background-image: -webkit-gradient(
+	linear,
+	right top,
+	left bottom,
+	color-stop(0.20, #003232),
+	color-stop(0.62, #B6A88D)
+);
+}
+	
+#sitebranding {
+	width: 100%;
+}
+
+#newsletter {
+	width: 100%;
+	font: 1em Helvetica, Arial, Sans-serif;
+	text-align: center;
+}
+
+#social1 {
+	display: none;
+}
+
+#social {
+	display: none;
+}
+
+.mainnav {
+	width: 37.5%; /*150px/400px*/
+	height: 225px;
+	padding: 0 5%; /*20px/400px*/
+}
+
+.mainnav a {
+	display: block;
+	width: 25%; /*100px/400px*/
+	text-decoration: none;
+	line-height: 30px;
+	border: 2px solid #8d5e04;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	cursor: pointer;
+	text-align: center;
+	background-color: #b67800;
+	padding: 0% 100%;
+} 
+
+
+/*----------Media Query 3---INDEX-------*/
+
+#reception {
+	display: none;
+}
+
+table.hours {
+	width: 100%; /*400px/400px*/
+	margin: 0.2%;
+	border-collapse: collapse;
+	border: 1px solid #000;
+	font-size: .8em;
+}
+
+th {
+	text-align: center;
+	border: 1px solid #000;
+	padding: 1.041667%; /*5px/480px*/
+}
+
+td {
+	padding: 1.041667%; /*5px/480px*/
+}
+
+
+#cta p {
+	clear: both;
+	width: 29.166667%; /*140px/480px*/
+	text-align: center;
+	word-wrap: break-word;
+	padding: 5px;
+}
+
+/*----------Media Query 3---ABOUT_US-------*/
+
+#team {
+	width: 100%;
+	text-align: left;
+	clear: left;
+}
+
+#team1 img {
+	max-width: 100%;
+}
+
+.team1 li {
+	padding: 0.651042%; /*5px/768px*/
+	display: block;
+	float: left;
+}
+
+/*----------Media Query 3---RESOURCES-------*/
+
+.dr_dog {
+	display: none;
+}
+#general {
+	width: 100%; 
+}
+
+#missing {
+	width: 100%
+}
+
+#dogs {
+	width: 100%
+}
+
+#cats {
+	width: 100%
+}
+
+/*----------Media Query 3---FORMS-------*/
+
+.registration_form {
+	width: 100%;
+}
+
+.sign_up_form {
+	width: 100%; /*420px/960px*/
+	float: left;
+	padding: 1.041667%; /*10px/960px 50px/960px*/
+}
+
+#dog {
+	display: none;
+}
+
 }
