@@ -286,7 +286,7 @@ td {
 	clear: both;
 }
 
-#form {
+.form {
 	padding: 2.916667%; /*28px/960px*/
 }
 
@@ -300,7 +300,7 @@ td {
 	float: right;
 }
 
-#button {
+.button {
 	-moz-box-shadow:inset 0px 0px 0px 0px #000000;
 	-webkit-box-shadow:inset 0px 0px 0px 0px #000000;
 	box-shadow:inset 0px 0px 0px 0px #000000;
